@@ -1,0 +1,69 @@
+.tools{
+  margin-top: 235px !important;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  &-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &-item{
+    width: 160px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+  &-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &:hover{
+      filter: saturate(200%)
+    }
+    &.preim{
+      background-image: url(./002.png);
+      background-size: cover;
+    }
+    &.tarif{
+      background-image: url(./003.png);
+      background-size: cover;
+    }
+    &.podkl{
+      background-image: url(./004.png);
+      background-size: cover;
+    }
+    &.kakpodkl{
+      background-image: url(./005.png);
+      background-size: cover;
+    }
+    &.oplata{
+      background-image: url(./006.png);
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 830px){
+  .tools{
+    margin-top: 0px !important;
+    &-list{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 94%;
+    }
+    &-item{
+      margin-bottom: 0px;
+    }
+  }
+}
